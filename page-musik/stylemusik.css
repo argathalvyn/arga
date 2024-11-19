@@ -32,14 +32,14 @@ header {
     -ms-user-select: none; 
 }
 
-.menu-item {
+/* .menu-item {
     margin-left: 30px; 
     margin-right: -1280px; 
     color: white; 
     cursor: pointer;
     font-size: 18px; 
     text-decoration: none;
-}
+} */
 
 .hamburger {
     cursor: pointer;
@@ -80,12 +80,55 @@ nav ul {
 
 nav ul li {
     padding: 10px;
+    border-bottom: 1px solid #444;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    header {
+        display: flex; /* Menggunakan flexbox untuk layout */
+        justify-content: space-between; /* Menyebar elemen ke kiri dan kanan */
+        align-items: center; /* Menyelaraskan item secara vertikal */
+        padding: 10px 20px; /* Menambahkan padding untuk header */
+    }
+    }
+
+    .header-title {
+        margin: 0; /* Menghapus margin untuk header title */
+        text-align: right; /* Menyelaraskan teks ke kanan */
+        flex-grow: 1; /* Memungkinkan header title untuk mengambil ruang yang tersedia */
+    }
+
+    .menu-item {
+        display: none; /* Menyembunyikan menu item di layar mobile */
+    }
+
+    .hamburger {
+        display: block; /* Menampilkan hamburger menu */
+        align-self: flex-end;
+    }
+
+    nav {
+        position: absolute; /* Mengubah posisi menjadi fixed */
+        top: 50px; /* Menempatkan menu di bawah header */
+        left: 0; /* Menempatkan menu di sisi kiri */
+        width: 100%; /* Mengubah lebar menu menjadi 100% */
+        z-index: 999; /* Memastikan menu berada di atas elemen lain */
+    }
+
+    nav ul {
+        flex-direction: column; /* Mengubah arah list menu menjadi kolom */
+    }
+
+    nav ul li {
+        padding: 15px; /* Menambahkan padding untuk item menu */
+        border-bottom: 1px solid #444; /* Menambahkan garis bawah untuk pemisahan */
+    }
+
 
 main {
     padding: 20px;
