@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="LOGO IRGA WAHID.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai Selamat Datang!</title>
+    <link rel="stylesheet" type="text/css" href="styleportofolioirga.css">
+
+    <!-- box icon link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <a href="irgawahidportofolio.html" class="logo"><span>I</span>rga</a>
+
+        <div class="menu-btn">
+            <span></span>
+            <div class="bx bx-menu" id="menu-icon"></div> <!-- Ikon menu -->
+        </div>
+
+        <ul class="navbar">
+            <li><a href="index.html" class="active custom-link">Beranda</a></li>
+            <li><a href="tentang-saya.html" class="custom-link">Tentang Saya</a></li>
+            <li><a href="https://www.google.com/intl/id/gmail/about/" class="custom-link">Kontak</a></li>
+            <li><a href="privacy.html" class="custom-link">Privacy</a></li>
+        </ul>
+
+        <div class="container">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-text">
+            <span>Web Developer</span> 
+            <h1>Arga Thalvyn</h1>
+            <p class="custom-paragraph">Hallo... Perkenalkan nama saya Arga Thalvyn seorang content creator asal Indonesia, saya memiliki hobi bermain game, mengedit video, dan juga saya sangat senang dengan dunia pemrograman, dengan mempelajari HTML, CSS, dan JavaScript dengan tingkat yang sederhana.</p>
+            <div class="main-btn">
+                <a href="https://youtu.be/13ARO0HDZsQ?si=1v27v-kQZTIift1S" class="btn">YouTube</a>
+                <a href="#" class="btn two">Hire Me Now</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <!-- <img src="home.png"> -->
+        </div>
+    </section>
+
+    <div class="share">
+        <p class="custom-paragraph">Cek sosmed saya disini:</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/irwhdz?igsh=enZhbmFmMG5xZzc2"><i class='bx bxl-instagram'></i></a>
+            <a href="www.youtube.com/@irwahiga"><i class='bx bxl-youtube'></i></a>
+            <a href="discordapp.com/users/883741629683486722"><i class='bx bxl-discord-alt'></i></a>
+        </div>
+    </div>
+
+    <!-- Custom js file link -->
+    <script src="https://unpkg.com/scrollreveal@4.0.5"></script>
+    <script src="js-wpi.js"></script>
+
+    <!-- DARK MODE SCRIPT -->
+    <script>
+        const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }    
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+
+    <!-- Menu Toggle Script -->
+    

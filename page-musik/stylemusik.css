@@ -1,0 +1,126 @@
+
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-title {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+.menu-item {
+    margin-left: 30px; 
+    margin-right: -1280px; 
+    color: white; 
+    cursor: pointer;
+    font-size: 18px; 
+    text-decoration: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #1b282a;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 200px;
+    visibility: hidden; /* Menggunakan visibility untuk menyembunyikan menu */
+    opacity: 0; /* Menu tidak terlihat saat tersembunyi */
+    transition: transform 0.8s ease, opacity 0.8s ease; /* Menambahkan transisi untuk transform dan opacity */
+    transform: translateX(-10px); /* Reset transform */
+    z-index: 1000;
+}
+
+nav.hidden {
+    visibility: hidden; /* Menyembunyikan menu */
+    opacity: 0; /* Menjadikan menu transparan */
+    transform: translateX(-10px); /* Reset transform */
+}
+
+nav.visible {
+    visibility: visible; /* Menampilkan menu */
+    opacity: 1; /* Menjadikan menu terlihat */
+    transform: translateX(0); /* Menggeser menu ke dalam tampilan */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #871f1f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Menempatkan footer di bagian bawah */
+}
+
+.footer-content {
+    max-width: 1200px; /* Membatasi lebar konten footer */
+    margin: 0 auto; /* Centering footer content */
+    padding: 0 20px; /* Menambahkan padding */
+}
+
+.footer-links {
+    list-style-type: none; /* Menghapus bullet points */
+    padding: 0; /* Menghapus padding */
+    margin: 10px 0 0 0; /* Mengatur margin */
+}
+
+.footer-links li {
+    display: inline; /* Menampilkan link dalam satu baris */
+    margin: 0 15px; /* Menambahkan margin antar link */
+}
+
+.footer-links a {
+    color: white; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
